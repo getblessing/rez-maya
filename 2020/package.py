@@ -14,6 +14,11 @@ _data = {
     "icon": "{root}/resources/mayaico.png"
 }
 
+requires = [
+    "!PySide2",
+    "~maya_devkit==2020",
+]
+
 
 tools = [
     "maya",
@@ -22,12 +27,6 @@ tools = [
 
 private_build_requires = ["rezutil-1"]
 build_command = "python -m rezutil build {root}"
-
-
-@late()
-def requires():
-    # pin ~maya_devkit
-    return []
 
 
 def commands():

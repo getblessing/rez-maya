@@ -11,6 +11,12 @@ _data = {
     "icon": "{root}/resources/mayaico.png"
 }
 
+requires = [
+    "!PySide2",
+    "~maya_devkit==2018",
+]
+
+
 tools = [
     "maya",
 ]
