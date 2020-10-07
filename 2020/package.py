@@ -50,6 +50,9 @@ def commands():
 
     env.PATH.append("{env.MAYA_LOCATION}/bin")
 
+    # clean Maya.env
+    env.MAYA_ENV_DIR = "{root}/resources"
+
     # Override some Maya default settings (optimization)
     # todo: These might need to be moved out to be left to company specific choices
     env.MAYA_DISABLE_CLIC_IPM = "Yes"
